@@ -73,8 +73,8 @@ A general comment on a model element, including the purpose of a model (which wo
 
 The recommended namespace declarations for using FOAF and the Dublin Core in the context of this specification are as follows::
 
-xmlns:foaf="http://xmlns.com/foaf/0.1/"
-xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
 
 Dublin Core terms not explicitly mentioned above are not considered part of the CellML Basic Model Information Metadata Specification 2.0.
 
@@ -132,10 +132,10 @@ Or, where an Agent might be involved in several annotations within the CellML mo
        <foaf:familyName>Cooling</foaf:familyName>
    </foaf:Person>
 	
-<foaf:Group>
-    <foaf:name>Auckland Bioengineering Institute</foaf:name>
-    <foaf:member rdf:nodeID="mike_cooling"/>
-</foaf:Group>
+   <foaf:Group>
+      <foaf:name>Auckland Bioengineering Institute</foaf:name>
+      <foaf:member rdf:nodeID="mike_cooling"/>
+   </foaf:Group>
 
 **5. Adding creator, timestamp and purpose descriptions to a CellML model.**
 
