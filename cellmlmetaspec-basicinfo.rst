@@ -1,4 +1,4 @@
-.. _cellmlmetaspec-basicinfo:
+﻿.. _cellmlmetaspec-basicinfo:
 
 =========================================================
 CellML Basic Model Information Metadata Specification 2.0
@@ -71,7 +71,7 @@ The point in time at which a model element was created should be encoded using t
 
 A general comment on a model element, including the purpose of a model (which would be encoded with the <model> tag as the RDF Subject), should be encoded using the Dublin Core 'description' term, as text.
 
-The recommended namespace declarations for using FOAF and the Dublin Core in the context of this specification are as follows:
+The recommended namespace declarations for using FOAF and the Dublin Core in the context of this specification are as follows::
 
 xmlns:foaf="http://xmlns.com/foaf/0.1/"
 xmlns:dcterms="http://purl.org/dc/terms/"
@@ -163,7 +163,9 @@ Or, where an Agent might be involved in several annotations within the CellML mo
        <dcterms:created rdf:datatype=" http://purl.org/dc/terms/W3CDTF">
            2011-02
        </dcterms:created>
-       <dcterms:description>This model was constructed as an example model for the CellML 1.1 Metadata Specification Framework.
+       <dcterms:description>
+         This model was constructed as an example model for the CellML 1.1 
+         Metadata Specification Framework.
        </dcterms:description>
    </rdf:Description>
 

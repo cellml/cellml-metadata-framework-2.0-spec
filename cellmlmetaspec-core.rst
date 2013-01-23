@@ -1,4 +1,4 @@
-.. _cellmlmetaspec-core:
+ï»¿.. _cellmlmetaspec-core:
 
 ================================================
 CellML Metadata Framework Core Specification 2.0
@@ -67,7 +67,7 @@ Annotations will be made using RDF (http://www.w3.org/RDF/) Statements. Briefly,
 
 (note the "2.0" towards the end of the Namespace URI, which pertains to the 2.0 Metadata Specification, as opposed to "cmeta" as used in the previous 1.0 Metadata Specification [http://www.cellml.org/specifications/metadata/cellml_metadata_1.0]). Additional namespaces for particular relationship types, where required, must be defined in the associated satellite specifications.
 
-Model elements can be referenced by RDF statements if they have an ID. An attribute "cmeta:id" can be created on any CellML element. The "id" is required to be unique across all attributes of type ID inside a CellML model document. Making annotations to MathML inside a CellML model document is similarly catered for using MathML’s existing "math:id" optional attribute. The creation of "id"s is covered in more detail in the CellML 1.1 language specification, section 8 (http://www.cellml.org/specifications/cellml_1.1/#sec_metadata).
+Model elements can be referenced by RDF statements if they have an ID. An attribute "cmeta:id" can be created on any CellML element. The "id" is required to be unique across all attributes of type ID inside a CellML model document. Making annotations to MathML inside a CellML model document is similarly catered for using MathML's existing "math:id" optional attribute. The creation of "id"s is covered in more detail in the CellML 1.1 language specification, section 8 (http://www.cellml.org/specifications/cellml_1.1/#sec_metadata).
 
 RDF annotation linking to CellML model elements should be enclosed within RDF tags. A simple example with one set of RDF tags is shown below. The example shows the basic declaration of a CellML model document, the core annotation namespace and RDF tags. A cmeta:id defined on the <model> tag (or any other tag as per above) can be used as a 'hook' to attach annotation to (in this case, the ID is declared is 'model_example').
 
@@ -96,7 +96,7 @@ In keeping with RDF/XML, a basic RDF Subject declaration is shown above, by mean
 
 For additional examples of the RDF/XML that goes between the RDF tags, please see one or more of the CellML Metadata Framework 2.0 satellite specifications.
 
-An alternative method of attaching metadata to CellML model elements is to use, as values of the rdf:about attribute, URIs with XPATH 1.0 expressions (see http://www.w3.org/TR/1999/REC-xpath-19991116/ for details) as fragments. XPATH is attractive because it can specify not only XML tags that have IDs, but any XML node within the document – such as attributes of tags, or tags without IDs.
+An alternative method of attaching metadata to CellML model elements is to use, as values of the rdf:about attribute, URIs with XPATH 1.0 expressions (see http://www.w3.org/TR/1999/REC-xpath-19991116/ for details) as fragments. XPATH is attractive because it can specify not only XML tags that have IDs, but any XML node within the document - such as attributes of tags, or tags without IDs.
 
 The ability to use complex expressions as fragments for URIs that reference XML documents is provided by the XPointer Framework W3C Recommendation (http://www.w3.org/TR/2003/REC-xptr-framework-20030325/). At the time of writing, the part of the XPointer Framework (namely the 'xpointer() Scheme') allowing XPATH expressions is not yet a W3C Recommendation, but a Working Draft (see http://www.w3.org/TR/2002/WD-xptr-xpointer-20021219/ for details). The requirements here are a subset of those catered for by that Draft, and by other xpointer Schemes currently in the xpointer Scheme Registry (http://www.w3.org/2005/04/xpointer-schemes/). Therefore a simpler scheme called the' xpointernode() Scheme' is defined here. The syntax of the xpointernode() Scheme is defined as a subset of XPATH 1.0 expressions (http://www.w3.org/TR/1999/REC-xpath-19991116/) - specifically those that are evaluated to ultimately yield an object of type XPATH 'node-set' (thus excluding those expressions that ultimately evaluate to objects of other XPATH data types), where the node-set contains exactly one element.
 
@@ -114,7 +114,6 @@ making the 'initial_value' attribute of the variable whose name is 'concentratio
 Using XPATH expression predicates that rely on a particular ordering of model elements is possible in this Scheme, but strongly discouraged when used for CellML models. Model element order in CellML has no particular meaning and can often change when a model is serialized by different tools, complicating the ability of such tools to keep annotations attached appropriately. Instead, elements should be identified as explicitly as possible within XPATH expressions, by making use of name and/or id attributes where applicable.
 
 Finally, note that the standardised method of using XPATH within URI fragments facilitates the attachment of metadata to CellML model elements outside of the current XML document, for example in the following RDF Subject declaration::
-
    rdf:about="http://www.cellml.org/somewhere/otherdocument.cellml#xpointernode(component[@name='calcium'])"
 
 which references a particular component in a file accessible on the Web. xpointernode() fragments can also be used with other URI types that also point to XML documents, such as 'file://' URIs.

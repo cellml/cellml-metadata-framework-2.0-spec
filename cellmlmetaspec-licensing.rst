@@ -1,4 +1,4 @@
-.. _cellmlmetaspec-licensing:
+ï»¿.. _cellmlmetaspec-licensing:
 
 ===========================================
 CellML Licensing Metadata Specification 2.0
@@ -32,7 +32,7 @@ This document describes how to annotate a CellML model document with licensing i
 Realisation Strategy
 ====================
 
-Licensing information should be added using the Dublin Core (http://dublincore.org/documents/2010/10/11/dcmi-terms/) term 'license', as the RDF Predicate, with the model document’s <model> tag as the RDF Subject. The Object could be a URI to the licensing information, or a literal text version of the license, or a combination of the two. If both are desired, use of the RDF container 'Alt' is recommended. See http://www.w3.org/TR/rdf-primer/#containers for more information on RDF containers.
+Licensing information should be added using the Dublin Core (http://dublincore.org/documents/2010/10/11/dcmi-terms/) term 'license', as the RDF Predicate, with the model document's <model> tag as the RDF Subject. The Object could be a URI to the licensing information, or a literal text version of the license, or a combination of the two. If both are desired, use of the RDF container 'Alt' is recommended. See http://www.w3.org/TR/rdf-primer/#containers for more information on RDF containers.
 
 It may be desirable to specify a multi-license for the model. If the objects of RDF statements are the alternative licenses, then RDF Container 'rdf:Alt' is not recommended because it is open - it does not specify that those are the ONLY alternatives. The RDF Collection construct may be used, however here the semantic meaning of being alternatives is lost, implying that all licenses should apply. Hence in this situation, it is recommended to define a license document that specifies the multi-license intent and links to the finite number of alternatives. It is that initial document that should be specified as the RDF Object of an annotation statement. The recommended Dublin Core namespace declaration is as follows:
 

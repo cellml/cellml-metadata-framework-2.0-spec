@@ -1,4 +1,4 @@
-.. _cellmlmetaspec-citation:
+﻿.. _cellmlmetaspec-citation:
 
 ==========================================
 CellML Citation Metadata Specification 2.0

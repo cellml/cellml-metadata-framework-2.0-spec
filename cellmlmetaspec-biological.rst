@@ -1,4 +1,4 @@
-.. _cellmlmetaspec-biological:
+ï»¿.. _cellmlmetaspec-biological:
 
 =======================================================
 CellML Biological Annotation Metadata Specification 2.0
@@ -84,7 +84,7 @@ Examples
    cmeta:id="example_model"
    name="the_model"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:bqbio=”http://biomodels.net/biology-qualifiers/">
+   xmlns:bqbio="http://biomodels.net/biology-qualifiers/">
 
    ...other elements...
 
