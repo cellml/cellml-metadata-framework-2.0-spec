@@ -1,8 +1,8 @@
 .. _cellmlmetaspec-index:
 
-===================================
-CellML metadata draft specification
-===================================
+=======================================
+CellML Metadata 2.0 Draft Specification
+=======================================
 
 This is a proposal for the CellML metadata 2.0 specification written by Mike Cooling, intended for testing and discussion.
 
