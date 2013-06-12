@@ -1,10 +1,10 @@
-﻿.. _cellmlmetaspec-licensing:
+.. _cellmlmetaspec-licensing:
 
 ===========================================
 CellML Licensing Metadata Specification 2.0
 ===========================================
 
-June 2011
+Last Updated: June 2011
 
 :Authors:
    Michael T. Cooling (m.cooling@auckland.ac.nz)

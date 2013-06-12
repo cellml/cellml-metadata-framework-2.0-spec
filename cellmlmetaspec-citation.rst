@@ -1,10 +1,10 @@
-﻿.. _cellmlmetaspec-citation:
+.. _cellmlmetaspec-citation:
 
 ==========================================
 CellML Citation Metadata Specification 2.0
 ==========================================
 
-October 2011
+Last Updated: October 2011
 
 :Authors:
    Michael T. Cooling (m.cooling@auckland.ac.nz)

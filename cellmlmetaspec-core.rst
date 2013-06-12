@@ -1,10 +1,10 @@
-﻿.. _cellmlmetaspec-core:
+.. _cellmlmetaspec-core:
 
 ================================================
 CellML Metadata Framework Core Specification 2.0
 ================================================
 
-December 2011
+Last Updated: December 2011
 
 :Authors:
   Michael T. Cooling (m.cooling@auckland.ac.nz)

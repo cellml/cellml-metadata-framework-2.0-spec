@@ -1,13 +1,16 @@
-﻿.. _cellmlmetaspec-biological:
+.. _cellmlmetaspec-biological:
 
 =======================================================
 CellML Biological Annotation Metadata Specification 2.0
 =======================================================
 
-December 2011
+Last Updated: June 2013
 
 :Authors:
    Michael T. Cooling (m.cooling@auckland.ac.nz)
+   
+:Contributors:
+   Maxwell Neal
    
 **Status of this Document**
 
@@ -27,7 +30,23 @@ Realisation Strategy
 
 To link CellML elements to biological concepts one should use RDF statements where the CellML element is the RDF Subject, and a URI to the concept the RDF Object. The RDF Predicate should be chosen from the Biomodels Biological Qualifiers (at the time of writing, a list can be found here: http://www.ebi.ac.uk/miriam/main/qualifiers/, under the heading 'biology-qualifiers'). In keeping with the principles in the CellML Core Metadata Specification 2.0, the 'noun' forms of the predicates must be used e.g. 'identity' rather than 'is', or 'part' rather than 'hasPart'.
 
-In keeping with the Biomodels framework, the RDF Objects of the annotations statements should be URIs to biological concepts (not to instances of the biology themselves). Where possible these should link to a publically accessible ontology (or database, if no suitable ontology can be found) of such concepts such as the Gene Ontology (http://www.geneontology.org/), the PROTEIN ontology (http://pir.georgetown.edu/pro/) or UNIPROT (http://www.uniprot.org/). Where possible, Identifier.org URIs (http://identifiers.org) should be used as the RDF Object URIs, as these are persistent and easily dereferenced.
+In keeping with the Biomodels framework, the RDF Objects of the annotations statements should be URIs to biological concepts (not to instances of the biology themselves). Where possible these should link to a publically accessible ontology (or database, if no suitable ontology can be found) of such concepts. At the time or writing, we recommend the following ontologies, or sub-ontologies:
+
+   UniProt 
+   
+   ChEBI 
+   
+   Gene Ontology:cell component
+   
+   Cell Ontology 
+  
+   Mouse Adult Gross Anatomy
+   
+   Foundational Model of Anatomy
+   
+   Ontology of Physics for Biology
+ 
+Where possible, Identifier.org URIs (http://identifiers.org) should be used as the RDF Object URIs, as these are persistent and easily dereferenced.
 
 The recommended Biological qualifier namespace is as follows:
 
