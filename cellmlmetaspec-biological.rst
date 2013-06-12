@@ -30,6 +30,12 @@ Realisation Strategy
 
 To link CellML elements to biological concepts one should use RDF statements where the CellML element is the RDF Subject, and a URI to the concept the RDF Object. The RDF Predicate should be chosen from the Biomodels Biological Qualifiers (at the time of writing, a list can be found here: http://www.ebi.ac.uk/miriam/main/qualifiers/, under the heading 'biology-qualifiers'). In keeping with the principles in the CellML Core Metadata Specification 2.0, the 'noun' forms of the predicates must be used e.g. 'identity' rather than 'is', or 'part' rather than 'hasPart'.
 
+The recommended Biological qualifier namespace is as follows:
+
+.. code-block:: xml
+
+   xmlns:bqbio="http://biomodels.net/biology-qualifiers/"
+
 In keeping with the Biomodels framework, the RDF Objects of the annotations statements should be URIs to biological concepts (not to instances of the biology themselves). Where possible these should link to a publically accessible ontology (or database, if no suitable ontology can be found) of such concepts. At the time or writing, we recommend the following ontologies, or sub-ontologies:
 
    UniProt 
@@ -47,12 +53,6 @@ In keeping with the Biomodels framework, the RDF Objects of the annotations stat
    Ontology of Physics for Biology
  
 Where possible, Identifier.org URIs (http://identifiers.org) should be used as the RDF Object URIs, as these are persistent and easily dereferenced.
-
-The recommended Biological qualifier namespace is as follows:
-
-.. code-block:: xml
-
-   xmlns:bqbio="http://biomodels.net/biology-qualifiers/"
 
 It is important to try to be as precise as possible. For example, it might seem useful to annotate a CellML component as representing a particular protein. However, if the component also represents other things, then better alternatives might include using 'part' instead, or annotating a specific CellML variable rather than the entire CellML component as being that particular protein. Similarly, it is important to try to be as specific as possible. Annotating a CellML component to the effect that it represents 'a protein' (which one?) is often not as useful as relating it to a particular protein.
 Annotating Imported Model Elements
