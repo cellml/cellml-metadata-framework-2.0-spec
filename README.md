@@ -1,4 +1,4 @@
-CellMLmetadraft
-===============
+CellML Metadata Framework Specification 2.0
+===========================================
 
-CellML Metadata 2.0 Draft Specification by Mike Cooling
+Restructured text and Sphinx configuration files for building the above specification. Please see the file "index.rst" for more information. 
